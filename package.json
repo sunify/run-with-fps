@@ -1,0 +1,11 @@
+{
+  "name": "run-with-fps",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alexander Lunyov <isuntc@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunify/run-with-fps"
+  },
+  "license": "MIT"
+}
