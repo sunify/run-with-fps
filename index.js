@@ -1,4 +1,4 @@
-function runWithFps (fn, fps) {
+module.exports = function runWithFps (fn, fps) {
   var interval = 1000 / fps;
   var then = Date.now();
   var stopped = false;
