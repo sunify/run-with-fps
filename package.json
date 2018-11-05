@@ -1,6 +1,6 @@
 {
   "name": "run-with-fps",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "author": "Alexander Lunyov <isuntc@gmail.com>",
   "repository": {
