@@ -17,7 +17,8 @@ module.exports = function runWithFPS (fn, fps) {
     }
   };
 
-  run();
+  requestAnimationFrame(run);
+  fn(Date.now());
 
   return function() {
     stopped = true;
