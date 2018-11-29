@@ -4,7 +4,9 @@ module.exports = function runWithFPS (fn, fps) {
   var stopped = false;
 
   function run() {
-    requestAnimationFrame(run);
+    if (!stopped) {
+      requestAnimationFrame(run);
+    }
 
     var now = Date.now();
     var delta = now - then;
