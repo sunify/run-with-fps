@@ -1,4 +1,4 @@
-# Helper for run function with defined FPS
+# Run function with defined FPS
 
 ## Usage
 
