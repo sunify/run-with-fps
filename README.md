@@ -1,4 +1,6 @@
-# Run function with defined FPS
+# run-with-fps
+
+Runs a function with given FPS
 
 ## Usage
 
