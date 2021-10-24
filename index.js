@@ -13,12 +13,12 @@ module.exports = function runWithFPS (fn, fps) {
 
     if (delta > interval && !stopped) {
       then = now - (delta % interval);
-      fn(now);
+      fn(delta);
     }
   };
 
   requestAnimationFrame(run);
-  fn(Date.now());
+  fn(0);
 
   return function() {
     stopped = true;
