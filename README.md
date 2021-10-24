@@ -5,8 +5,8 @@
 ```es6
 import runWithFPS from 'run-with-fps';
 
-const stop = runWithFPS((time) => {
-  console.log(time);
+const stop = runWithFPS((delta) => {
+  console.log(delta); // ms between prev and current frame
   // draw something here
 }, 60);
 
