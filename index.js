@@ -2,10 +2,11 @@ module.exports = function runWithFPS (fn, fps) {
   var interval = 1000 / fps;
   var then = Date.now();
   var stopped = false;
+  let animationFrame;
 
   function run() {
     if (!stopped) {
-      requestAnimationFrame(run);
+      animationFrame = requestAnimationFrame(run);
     }
 
     var now = Date.now();
@@ -17,10 +18,11 @@ module.exports = function runWithFPS (fn, fps) {
     }
   };
 
-  requestAnimationFrame(run);
+  animationFrame = requestAnimationFrame(run);
   fn(0);
 
   return function() {
     stopped = true;
+    cancelAnimationFrame(animationFrame);
   }
 };
